@@ -1,0 +1,271 @@
+html, body, h1, h2, h3, h4, h5, h6, p, a, div, ul, li, blockquote {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+	color: #ddd;
+}
+html{
+	background-color: #181714;
+}
+#wrapper{
+	width: 100%;
+	background: #333;
+	position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 40px;
+	padding-bottom: 5px;
+}
+h1{
+	font-size: 2em;
+}
+h2{
+	font-size: 1.6em;
+}
+h3{
+	font-size: 1.15em;
+	padding-top: 60px;
+}
+h4{
+	font-size: 1.05em;
+}
+p{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #aaaaaa;
+}
+b{
+	font-weight: 700;
+	color: #eeeeee;
+}
+small{
+	font-size: .7em;
+}
+hr{
+	border: 1px #444444 solid;
+}
+img:not(.featureImage):not(#map):not(.logo){
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+iframe{
+	padding-top: 50px;
+	border: 0;
+}
+header{
+	/*height: 190px; слкшом большая высота, все элементы не могут занять столько пикселей*/ 
+	background-color: #eeeeee;
+	border-top: 11px #ef3e36 solid;
+}
+header img{
+	padding-top: 21px;
+	padding-left: 57px;
+}
+nav{
+	background-color: #000000;
+	border: 1px #666666 solid;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+	margin: 0 auto;
+	width: 563px;
+}
+nav ul li{
+	background-color: #939598;
+	border: 1px #555555 solid;
+	height: 100%;
+	width: 140px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: .75em;
+	transition: 0.75s;
+}
+nav ul li:hover{
+	background-color: #ef3e36;
+}
+nav ul li.active{
+	background-color: #666666;
+}
+nav ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+}
+footer{
+	background-color: #111111;
+}
+blockquote p{
+	font-family: Georgia, serif;
+	background-color: #444444;
+	border: 1px #aaaaaa solid;
+	font-size: 1.1em;
+	color: #cccccc;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.addresses{
+	margin: 0 auto;
+	width: 960px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.address{
+	width: 180px;
+	border-right: 2px #222222 solid;
+	padding-left: 10px;
+}
+.address:last-child{
+	border: none;
+}
+.address h4{
+	color: #aaaaaa;
+	padding-top: 15px;
+	padding-bottom: 7px;
+}
+.address address p{
+	color: #888888;
+	font-size: 0.75em;
+	line-height: 1.6em;
+	font-style: normal;
+}
+.address address a{
+	color: #888888;
+	transition: 0.8s;
+}
+.address address a:hover{
+	color: #ef3e36;
+}
+.copyrights{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	font-size: .7em;
+	color: #555555;
+	text-align: center;
+}
+main{
+	width: 1000px;
+	padding-top: 60px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+}
+.featureImage{
+	align-content: center;
+}
+.container{
+	text-align: center;
+}
+.values li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #aaaaaa;
+}
+.floatRightImg{
+	float: right;
+	margin: 15px;
+}
+#map{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.infoBox{
+	width: 940px;
+	margin: 40px 0px 40px 0px !important; 
+	padding: 25px 30px 30px 30px !important; 
+	background-color: #444444;
+	height: 215px;
+}
+.infoBox h3{
+	padding-top: 0;
+	margin-bottom: 3px;
+	padding-bottom: 4px;
+	width: 550px;
+	border-bottom: 1px #999999 solid;
+}
+.infoBox p{
+	width: 550px;
+}
+.infoBox a:link{
+	color: #bbbbbb; 
+}
+.infoBox a:visited{
+	color: #bbbbbb; 
+}
+.infoBox a:hover{
+	color: #ef3e36;
+	transition: .5s;
+}
+.infoBox a:active{
+	color: #ef3e36;
+}
+.table{
+	width: 100%;
+	margin: 10px 0 10px 0;
+	border: 1px #999999 solid;
+	background: #555555;
+	text-align: left;
+}
+.table tr th{
+	padding: 5px 8px 8px 8px;
+	background: #222222;
+	border-right: 1px #999999 solid;
+}
+.table tr td{
+	padding: 10px 8px 10px 8px;
+	border: 1px #999999 solid;
+	font-size: .8em;
+}
+.table tr:nth-child(odd){
+	background: #666666;
+}
+form{
+	width: 960px;
+	margin: 10px 0 10px 0;
+	padding: 5px 20px 10px 20px;
+	border: 1px #999999 solid;
+}
+form label{
+	font-weight: 700;
+}
+#fname, #lname{
+	width: 300px;
+	padding: 5px;
+	background: #eeeeee;
+	font-size: 1em;
+	color: #333333;
+
+}
+#comments{
+	height: 300px;
+	width: 500px;
+	line-height: 1.2em;
+}
+.btn{
+	margin: 20px 0 0 30px;
+	padding: 6px 30px 6px 30px;
+	font-size: .75em;
+	color: #ffffff;
+	font-weight: 700;
+	background-color: #555555;
+	border: none;
+	cursor: default;
+	transition: .75s;
+}
+.btn:hover{
+	background-color: #ef3e36;
+}
